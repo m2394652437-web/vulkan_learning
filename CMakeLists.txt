@@ -33,7 +33,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 find_program(GLSL_VALIDATOR glslangValidator)
 if(GLSL_VALIDATOR)
     # 创建输出目录
-    set(SPIRV_OUTPUT_DIR ${CMAKE_CURRENT_BINARY_DIR}/shaders)
+    set(SPIRV_OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/shaders)
     file(MAKE_DIRECTORY ${SPIRV_OUTPUT_DIR})
     
     # 查找所有着色器
